@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0F0C2"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".BasketFragment">
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/baseline_arrow_back_24"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="start"
+        />
+
+    <TextView
+
+        android:id="@+id/text_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:text="YOUR PERSONAL BASKET:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_empty"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/gg"
+        android:textAlignment="center"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="COUNT FOR PAY: "
+            android:textAlignment="center"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:id="@+id/basket_total_count"
+            android:layout_width="120dp"
+            android:layout_height="26dp"
+            android:background="@color/white"
+            android:text="0.00"
+            android:textColor="#D50909"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="18sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="$"
+            android:textColor="#D50909"
+            android:textAlignment="center"
+            android:textSize="20sp"
+
+            />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_basket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_card" />
+
+
+    <TextView
+
+        android:id="@+id/btn_pay"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frame_item_bg"
+        android:padding="10dp"
+        android:text="PAY"
+        android:layout_marginTop="14dp"
+        android:textAlignment="center"
+
+
+        />
+</LinearLayout>

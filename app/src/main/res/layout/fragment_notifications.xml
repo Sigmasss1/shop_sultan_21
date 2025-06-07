@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.NotificationsFragment"
+    android:padding="12dp">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/baseline_arrow_back_24"
+        android:contentDescription="@string/app_name" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/card_desc_image1"
+                android:layout_width="260dp"
+                android:layout_height="260dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/place_holder_my"/>
+
+            <TextView
+                android:id="@+id/card_desc_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="title_product"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="26sp"
+                android:layout_gravity="center_horizontal"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/card_desc_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="350"
+                    android:textSize="24sp"/>
+                <TextView
+                    android:id="@+id/card_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="$"
+                    android:textSize="24sp"/>
+            </LinearLayout>
+                <TextView
+                    android:id="@+id/card_desc_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="trolelelo tra la laguthoigorhygohoiyu530ygpjjy33 goigjrihgjphjriphjWHGJRHIRRIHGGIJIJgerpajgeprjhepijheop"
+                    android:layout_marginTop="8dp"
+                    android:visibility="visible"
+                    android:layout_marginBottom="30dp"
+                    android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/btn_to_pay"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:text="TO PAY"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:contentDescription="to pay"
+                android:background="@drawable/frame_item_bg"
+               />
+
+
+            </LinearLayout>
+
+
+
+    </ScrollView>
+</LinearLayout>
